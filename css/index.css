@@ -195,8 +195,6 @@ main{
   font-size: 1.5rem;
 }
 
-.f-text::-webkit-scrollbar {display: none;}
-
 .f-cnts:before{
   position: absolute;
   content: '';
@@ -340,6 +338,218 @@ main{
   border-radius: 50%;
   background-color: rgb(68, 68, 68);
 }
+
+/* 글래스 모피즘(컨텐츠2)________________________________ */
+#glassmorphism {
+  height: 100vh;
+  background: url(../image/sea-g5293c4036_1920.jpg) no-repeat center center;
+  background-size: cover;
+  font-family: 'Noto Sans', sans-serif;
+  box-shadow: 0px -5px 20px rgb(157, 157, 157);
+  position: relative;
+}
+
+.back-txt1{
+  font-family: 'DM Serif Display', serif;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  font-size: 9rem;
+  text-transform: uppercase;
+  margin-left: 200px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 10px;
+}
+
+.back-txt2{
+  font-family: 'DM Serif Display', serif;
+  position: absolute;
+  top: 470px;
+  right: 100px;
+  font-size: 9rem;
+  text-transform: uppercase;
+  margin-left: 200px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 10px;
+}
+
+.glass-img{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 700px;
+  margin: 30px auto 0;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.glass-img .i1{
+  position: absolute;
+  top: 530px;
+  left: 20px;
+  font-size: 130px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #4b4b4b;
+  transition: 0.3s;
+  z-index: 100;
+}
+.glass-img .i1:hover{color:#fff}
+
+.glass-img .i2{
+  position: absolute;
+  top: 550px;
+  left: 150px;
+  font-size: 100px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #4b4b4b;
+  z-index: 100;
+}
+.glass-img .i3:hover{color:#fff}
+
+.glass-img .i3{
+  position: absolute;
+  top: 530px;
+  right: 20px;
+  font-size: 130px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #4b4b4b;
+  z-index: 100;
+}
+.glass-img .i2:hover{color:#fff}
+
+.img-in{
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 450px;
+  text-transform: capitalize;
+}
+
+.img-in ul{position: relative;}
+.img-in ul li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.img-in ul li:first-child{display:block;}
+
+.img-in{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.753);
+}
+
+.info{
+  margin-top: 10px;
+  position: relative;
+}
+.info .bar{
+  width: 240px;
+  height: 15px;
+  background-color: #5e5e5e;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px auto 0;
+  font-size: 12px;
+  position: relative;
+}
+.info h2{
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+}
+.info p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.info .bar:before{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 80px;
+  height: 15px;
+  border-radius: 20px 0 0 20px;
+  background-color: #f7f7f7;
+}
+
+.bar p:nth-child(1){
+  position: absolute;
+  top: -5px;
+  left: -45px;
+}
+.bar p:nth-child(2){
+  position: absolute;
+  top: -5px;
+  right: -45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 타이포 그래피(컨텐츠3)______________________________ */
@@ -690,7 +900,6 @@ footer{
   /* 그라데이션_____________________________________________ */
   #gradients{
     padding: 40px 0;
-    overflow: hidden;
   }
 
   .f-cnts h4{
@@ -706,10 +915,10 @@ footer{
 
   .gr-in{
     width: 100%;
+    height: 60%;
     border-radius: 0;
     background: url(../image/back3.jpg) no-repeat center center;
     background-size: cover;
-    overflow: hidden;
   }
 
   .frame-in{
@@ -720,7 +929,21 @@ footer{
   }
   
   /* 첫번째 */
-  .f-cnts{grid-area: span 2 / span 5;}
+  .f-cnts{grid-area: span 3 / span 5;}
+
+  .f-cnts img{
+  position: absolute;
+  top: 100px;
+  left: 80%;
+  transform: translateX(-80%);
+}
+
+  .f-cnts3 img{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   
   /* 두번째 */
   .f-cnts2{
@@ -745,6 +968,7 @@ footer{
 
   #gradients>p{
     padding: 10px;
+    font-size: 1.2rem;
   }
 
   .f-bar{
@@ -821,6 +1045,6 @@ footer{
   }
   
   .para-in h2{font-size: 2.5rem;}
-  .para-in p{font-size: 1.5rem;}
+  .para-in p{font-size: 1.2rem;}
   }
 
