@@ -497,61 +497,6 @@ main{
   right: -45px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 타이포 그래피(컨텐츠3)______________________________ */
 #typography {
   height: 100vh;
@@ -730,7 +675,7 @@ footer{
   .mouse{display: none;}
   .arrow-down{display: none;}
 
-  /* 그라데이션 */
+  /* 그라데이션_________________________________- */
   #gradients{padding: 40px 0;}
   .gr-in{
     display: grid;
@@ -749,16 +694,22 @@ footer{
   }
 
 /* 타이포 그래피___________________________________ */
+.typo-in{
+  width: 80%;
+  height: 90%;
+  padding: 30px 50px 100px 50px;
+  margin: auto;
+  text-align: center;
+}
+
   .typo-img{
     display: grid;
     grid-template-columns: repeat(5, 1fr);  grid-template-rows: 1fr 1fr;
     gap: 30px;
     width: 100%;
   }
-  
-  .typo-in{flex-direction: column;}
 
-  /* 첫번째 */
+/* 첫번째 */
 .f-cnts{grid-area: span 1 / span 2;}
 
 /* 두번째 */
@@ -775,7 +726,6 @@ footer{
 }
 
 .f-cnts3 img{display: none;}
-
 .f-cnts4{display: none;}
 
 /* 세번째 */
@@ -787,28 +737,30 @@ footer{
   position: relative;
 }
 
-  /* 타이포그래피 */
-  .typo-in{
-    width: 80%;
-    height: 90%;
-    padding: 30px 50px 100px 50px;
-    margin: auto;
-    text-align: center;
-  }
-
-  .typo-img div:nth-child(1){ 
-    grid-area: span 1 / span 5; /* 행/열 */
-    border-radius: 0 30px 30px 0 ;
-  }
-  .typo-img div:nth-child(2){
-    grid-area: span 1 / span 2;
-    border-radius: 30px 0 30px 0 ;
+.typo-img div:nth-child(1){ 
+  grid-area: span 1 / span 5; /* 행/열 */
+  border-radius: 0 30px 30px 0 ;
+}
+.typo-img div:nth-child(2){
+  grid-area: span 1 / span 2;
+  border-radius: 30px 0 30px 0 ;
   }
   .typo-img div:nth-child(3){ display: none;}
   .typo-img div:nth-child(4){ 
     grid-area: span 1 / span 3;
     border-radius: 30px 0 0 30px ;
   }
+
+/* glass morphism________________________ */
+.back-txt1{
+  top: 100px;
+  left: -200px;
+}
+
+.back-txt2{
+  top: 470px;
+  right: -200px;
+}
 
   /* parallex___________________________ */
   #parallex{padding: 50px 0px;}
@@ -828,7 +780,6 @@ footer{
   }
   .para-in h2{font-size: 3rem;}
 }
-
 
 /* 모바일__________________________________________________________________ */
 @media (max-width: 767px){
@@ -1020,6 +971,12 @@ footer{
 }
 .typo-img div:nth-child(3){ display: none;}
 .typo-img div:nth-child(4){ grid-area: span 1 / span 3;}
+
+
+/* glass morphism________________________ */
+.back-txt1{display: none;}
+
+.back-txt2{display: none;}
 
   /* parallex______________________________________________ */
   #parallex{
