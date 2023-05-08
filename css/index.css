@@ -213,13 +213,19 @@ main{
 #typography {
   height: auto;
   padding: 100px;
+  box-sizing: border-box;
+  border: 1px solid #000;
 }
 
 .typo-in{
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
+  gap: 40px;
+  border: 1px solid #000;
 }
 .typo-in h2{
   font-size: 3.125rem;
@@ -232,7 +238,7 @@ main{
   height: 800px;
   display: flex;
   flex-direction: column;
-  margin: 60px 0 0 80px;
+  border: 1px solid #d03434;
 }
 
 .typo-img{
@@ -243,6 +249,7 @@ main{
   gap: 20px;
   width: 60%;
   height: 700px;
+  border: 1px solid #000;
 }
 .typo-img div{transition: 0.5s;}
 .typo-img div:hover{box-shadow: 0 0 10px rgb(0, 0, 0);}
@@ -586,7 +593,7 @@ footer{
 .typo-cnt p{font-size: 1.5rem;}
 
 .typo-img{
-  width: 100%;
+  width: 80%;
   height: 700px;
   margin-bottom: 20px;
 }
