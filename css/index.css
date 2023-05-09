@@ -169,7 +169,8 @@ main{
 
 .f-cnts{
   grid-area: span 2 / span 2;
-  background-color: #fff;
+  background: url(../image/back5.jpg) no-repeat center center;
+  background-size: cover;
   position: relative;
 }
 .f-cnts>div{width: 100%;}
@@ -183,16 +184,6 @@ main{
   0%{transform: translate(10px,-10px);}
   50%{transform: translate(-10px,10px);}
   100%{transform: translate(20px,-30px);}
-}
-.f-cnts h4{
-  margin: 50px 20px 0 20px;
-  font-size: 2rem;
-}
-.f-cnts .f-text2{
-  padding: 10px 20px;
-  width: 100%;
-  height: 150px;
-  font-size: 1.5rem;
 }
 
 .f-cnts:before{
@@ -344,157 +335,37 @@ main{
   height: 100vh;
   background: url(../image/sea-g5293c4036_1920.jpg) no-repeat center center;
   background-size: cover;
-  font-family: 'Noto Sans', sans-serif;
   box-shadow: 0px -5px 20px rgb(157, 157, 157);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  padding: 150px 300px;
+  row-gap: 60px;
+  column-gap: 40px;
+}
+
+#glassmorphism>div:nth-child(1){
+  grid-area: span 5 / span 2;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
   position: relative;
 }
 
-.back-txt1{
-  font-family: 'DM Serif Display', serif;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  font-size: 9rem;
-  text-transform: uppercase;
-  margin-left: 200px;
+#glassmorphism>div:nth-child(2){
+  grid-area: span 2 / span 2;
+}
+.g-txt h3{
+  font-size: 5rem;
   color: #fff;
-  font-weight: normal;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  letter-spacing: 10px;
-}
-
-.back-txt2{
-  font-family: 'DM Serif Display', serif;
-  position: absolute;
-  top: 470px;
-  right: 100px;
-  font-size: 9rem;
-  text-transform: uppercase;
-  margin-left: 200px;
-  color: #fff;
-  font-weight: normal;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  letter-spacing: 10px;
-}
-
-.glass-img{
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  height: 700px;
-  margin: 30px auto 0;
-  border-radius: 30px;
-  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
-  backdrop-filter: blur(5px);
-}
-
-.glass-img .i1{
-  position: absolute;
-  top: 530px;
-  left: 20px;
-  font-size: 130px;
-  cursor: pointer;
-  text-shadow: 0 0 10px #4b4b4b;
-  transition: 0.3s;
-  z-index: 100;
-}
-.glass-img .i1:hover{color:#fff}
-
-.glass-img .i2{
-  position: absolute;
-  top: 550px;
-  left: 150px;
-  font-size: 100px;
-  cursor: pointer;
-  text-shadow: 0 0 10px #4b4b4b;
-  z-index: 100;
-}
-.glass-img .i3:hover{color:#fff}
-
-.glass-img .i3{
-  position: absolute;
-  top: 530px;
-  right: 20px;
-  font-size: 130px;
-  cursor: pointer;
-  text-shadow: 0 0 10px #4b4b4b;
-  z-index: 100;
-}
-.glass-img .i2:hover{color:#fff}
-
-.img-in{
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: 450px;
   text-transform: capitalize;
 }
 
-.img-in ul{position: relative;}
-.img-in ul li{
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-.img-in ul li:first-child{display:block;}
-
-.img-in{
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 0 10px rgba(51, 51, 51, 0.753);
-}
-
-.info{
-  margin-top: 10px;
-  position: relative;
-}
-.info .bar{
-  width: 240px;
-  height: 15px;
-  background-color: #5e5e5e;
+#glassmorphism>div:nth-child(3){
+  grid-area: span 3 / span 2;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
-  position: relative;
-  margin: 15px auto 0;
-  font-size: 12px;
-  position: relative;
-}
-.info h2{
-  -webkit-text-stroke: 1px #fff;
-  color: transparent;
-  font-size: 1.8rem;
-  margin-bottom: 3px;
-}
-.info p{
-  font-size: 18px;
-  font-weight: bold;
-  color: #181818;
-}
-
-.info .bar:before{
-  content: '';
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 80px;
-  height: 15px;
-  border-radius: 20px 0 0 20px;
-  background-color: #f7f7f7;
-}
-
-.bar p:nth-child(1){
-  position: absolute;
-  top: -5px;
-  left: -45px;
-}
-.bar p:nth-child(2){
-  position: absolute;
-  top: -5px;
-  right: -45px;
 }
 
 /* 타이포 그래피(컨텐츠3)______________________________ */
@@ -516,7 +387,7 @@ main{
 }
 .typo-in p{
   font-size: 1.563rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .typo-img{
@@ -685,13 +556,33 @@ footer{
     background: url(../image/back2.jpg) no-repeat center center;
   }
 
-  .f-cnts .h4{font-size: 1.3rem;}
-  .f-cnts .f-text2{
-    padding: 5px 20px;
-    width: 100%;
-    height: 150px;
-    font-size: 1rem;
-  }
+  /* 첫번째 */
+.f-cnts{grid-area: span 1 / span 2;}
+
+/* 두번째 */
+.f-cnts2{
+  font-family: 'Press Start 2P', cursive;
+  grid-area: span 1 / span 3;
+  background: url(../image/gr6.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.f-cnts2 h3{
+  margin-top: 80px;
+  font-size: 1.5rem;
+}
+
+.f-cnts3 img{display: none;}
+.f-cnts4{display: none;}
+
+/* 세번째 */
+.f-cnts3{
+  border: 2px solid #7d7d7d;
+  grid-area: span 2 / span 5;
+  background: url(../image/frame5.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
 
 /* 타이포 그래피___________________________________ */
 .typo-in{
@@ -708,34 +599,6 @@ footer{
     gap: 30px;
     width: 100%;
   }
-
-/* 첫번째 */
-.f-cnts{grid-area: span 1 / span 2;}
-
-/* 두번째 */
-.f-cnts2{
-  font-family: 'Press Start 2P', cursive;
-  grid-area: span 1 / span 3;
-  background: url(../image/gr6.jpg) no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-.f-cnts2 h3{
-  margin-top: 150px;
-  font-size: 1.5rem;
-}
-
-.f-cnts3 img{display: none;}
-.f-cnts4{display: none;}
-
-/* 세번째 */
-.f-cnts3{
-  border: 2px solid #7d7d7d;
-  grid-area: span 2 / span 5;
-  background: url(../image/frame5.jpg) no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
 
 .typo-img div:nth-child(1){ 
   grid-area: span 1 / span 5; /* 행/열 */
@@ -760,6 +623,32 @@ footer{
 .back-txt2{
   top: 470px;
   right: -200px;
+}
+
+#glassmorphism {
+  padding: 100px 50px;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+
+#glassmorphism>div:nth-child(1){
+  grid-area: span 5 / span 2;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#glassmorphism>div:nth-child(2){
+  grid-area: span 2 / span 2;
+}
+.g-txt h3{
+  font-size: 5rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#glassmorphism>div:nth-child(3){
+  grid-area: span 3 / span 2;
 }
 
   /* parallex___________________________ */
@@ -851,17 +740,6 @@ footer{
   /* 그라데이션_____________________________________________ */
   #gradients{
     padding: 40px 0;
-  }
-
-  .f-cnts h4{
-    font-size: 1.3rem;
-  }
-
-  .f-cnts .f-text2{
-    padding: 5px 20px;
-    width: 100%;
-    height: 150px;
-    font-size: 1.1rem;
   }
 
   .gr-in{
@@ -972,11 +850,37 @@ footer{
 .typo-img div:nth-child(3){ display: none;}
 .typo-img div:nth-child(4){ grid-area: span 1 / span 3;}
 
-
 /* glass morphism________________________ */
-.back-txt1{display: none;}
 
-.back-txt2{display: none;}
+#glassmorphism {
+    height: 100vh;
+    background: url(../image/sea-g5293c4036_1920.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0px -5px 20px rgb(157, 157, 157);
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+    row-gap: 0px;
+    column-gap: 40px;
+  }
+
+#glassmorphism>div:nth-child(1){
+  grid-area: span 3 / span 5;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#glassmorphism>div:nth-child(2){grid-area: span 2 / span 5;}
+.g-txt{margin-top: 20px;}
+.g-txt h3{
+  font-size: 4rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#glassmorphism>div:nth-child(3){display: none;}
 
   /* parallex______________________________________________ */
   #parallex{
