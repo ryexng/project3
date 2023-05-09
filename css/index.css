@@ -281,10 +281,7 @@ main{
   position: relative;
   border: 2px solid #a3a3a3;
 }
-.f-cnts5{
-  grid-area: span 3 / span 1;
-  /* border: 1px solid #000; */
-} 
+.f-cnts5{grid-area: span 3 / span 1;} 
 
 .f-bar{
   width: 100%;
@@ -430,7 +427,7 @@ main{
 /* 패럴렉스(컨텐츠4)________________________________________ */
 #parallex {
   padding: 50px 100px;
-  height: auto;
+  height: 100vh;
   box-shadow: 0px -5px 20px rgb(157, 157, 157);
   background-color: rgb(224, 224, 224);
 }
@@ -485,7 +482,6 @@ main{
   background-size: cover;
 }
 
-
 /* 푸터__________________________________________ */
 footer{
   width: 100%;
@@ -512,51 +508,49 @@ footer{
 
 /* 태블릿__________________________________________________ */
 @media screen and (min-width: 768px) and (max-width: 1024px){
-  header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-  }
-  
-  nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    margin-top: 0;
-  }
-  
-  nav .up img{
-    transform:scale(0.6);
-    padding-top: 0;
-  }
-  
-  .gnb{display: flex;}
-  .gnb li{
-    margin-top: 0;
-    margin-left: 20px;
-  }
-  
-  /* 메인____________________________________ */
-  main{
-    height: 800px;
-  }
-  .mouse{display: none;}
-  .arrow-down{display: none;}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
 
-  /* 그라데이션_________________________________- */
-  #gradients{padding: 40px 0;}
-  .gr-in{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 90%;
-    background: url(../image/back2.jpg) no-repeat center center;
-  }
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: none;
+  margin-top: 0;
+}
 
-  /* 첫번째 */
+nav .up img{
+  transform:scale(0.6);
+  padding-top: 0;
+}
+
+.gnb{display: flex;}
+.gnb li{
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+/* 메인____________________________________ */
+main{height: 100vh;}
+.mouse{display: none;}
+.arrow-down{display: none;}
+
+/* 그라데이션_________________________________- */
+#gradients{padding: 40px 0;}
+.gr-in{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 90%;
+  background: url(../image/back2.jpg) no-repeat center center;
+}
+
+/* 첫번째 */
 .f-cnts{grid-area: span 1 / span 2;}
 
 /* 두번째 */
@@ -593,12 +587,12 @@ footer{
   text-align: center;
 }
 
-  .typo-img{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);  grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    width: 100%;
-  }
+.typo-img{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
 
 .typo-img div:nth-child(1){ 
   grid-area: span 1 / span 5; /* 행/열 */
@@ -607,12 +601,12 @@ footer{
 .typo-img div:nth-child(2){
   grid-area: span 1 / span 2;
   border-radius: 30px 0 30px 0 ;
-  }
-  .typo-img div:nth-child(3){ display: none;}
-  .typo-img div:nth-child(4){ 
-    grid-area: span 1 / span 3;
-    border-radius: 30px 0 0 30px ;
-  }
+}
+.typo-img div:nth-child(3){ display: none;}
+.typo-img div:nth-child(4){ 
+  grid-area: span 1 / span 3;
+  border-radius: 30px 0 0 30px ;
+}
 
 /* glass morphism________________________ */
 .back-txt1{
@@ -651,165 +645,160 @@ footer{
   grid-area: span 3 / span 2;
 }
 
-  /* parallex___________________________ */
-  #parallex{padding: 50px 0px;}
-  .para-box{
-    display: block;
-    width: auto;
-    height: auto;
-  }
-  .para-box div{
-    margin: 30px auto 0;
-    width: 70%;
-  }
-  
-  .para-box div img{
-    width: 100%;
-    object-fit: cover;
-  }
-  .para-in h2{font-size: 3rem;}
+/* parallex___________________________ */
+#parallex{padding: 50px 0px;}
+.para-box{
+  display: block;
+  width: auto;
+  height: auto;
+}
+.para-box div{
+  margin: 30px auto 0;
+  width: 70%;
+}
+
+.para-box div img{
+  width: 100%;
+  object-fit: cover;
+}
+.para-in h2{font-size: 3rem;}
 }
 
 /* 모바일__________________________________________________________________ */
 @media (max-width: 767px){
-  header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  
-  nav{
-    background-color: rgb(39, 39, 39);
-    margin-top: 0;
-    border-right: none;
-    border-bottom: 0;
-  }
-  
-  nav .up img{
-    transform:scale(0.6);
-    padding-top: 0;
-  }
-  
-  .gnb{
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-  .gnb li{
-    margin-top: 0;
-    padding: 10px;
-  }
-  
-  .trigger{
-    display: block;
-    position: absolute;    
-    width: 30px;
-    height: 20px;
-    top: 15px;
-    right: 30px;
-    cursor: pointer;
-  }
-  .trigger span{
-    background-color: #fff;
-    height: 2px;
-    position: absolute;
-    width: 100%;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .trigger span:nth-child(1) {top: 0;}
-  .trigger span:nth-child(2) {top: 50%;}
-  .trigger span:nth-child(3) {top: 100%;}
-  .trigger.active span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 50%;
-  }
-  .trigger.active span:nth-child(2) {opacity: 0;}
-  .trigger.active span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 50%;
-  }
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
-  /* 메인________________________________________ */
-  main{height: 600px;}
-  .mouse{display: none;}
-  .arrow-down{display: none;}
+nav{
+  background-color: rgb(39, 39, 39);
+  margin-top: 0;
+  border-right: none;
+  border-bottom: 0;
+}
 
-  /* 그라데이션_____________________________________________ */
-  #gradients{
-    padding: 40px 0;
-  }
+nav .up img{
+  transform:scale(0.6);
+  padding-top: 0;
+}
 
-  .gr-in{
-    width: 100%;
-    height: 60%;
-    border-radius: 0;
-    background: url(../image/back3.jpg) no-repeat center center;
-    background-size: cover;
-  }
+.gnb{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.gnb li{
+  margin-top: 0;
+  padding: 10px;
+}
 
-  .frame-in{
-    width: 100%;
-    border-radius: 0;
-    background: url(../image/back4.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  
-  /* 첫번째 */
-  .f-cnts{grid-area: span 3 / span 5;}
+.trigger{
+  display: block;
+  position: absolute;    
+  width: 30px;
+  height: 20px;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+.trigger span{
+  background-color: #fff;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.trigger span:nth-child(1) {top: 0;}
+.trigger span:nth-child(2) {top: 50%;}
+.trigger span:nth-child(3) {top: 100%;}
+.trigger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.trigger.active span:nth-child(2) {opacity: 0;}
+.trigger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
 
-  .f-cnts img{
+/* 메인________________________________________ */
+main{height: 100vh;}
+.mouse{display: none;}
+.arrow-down{display: none;}
+
+/* 그라데이션_____________________________________________ */
+#gradients{
+  padding: 40px 0;
+  height: 100vh;
+}
+
+.gr-in{
+  width: 100%;
+  height: 60%;
+  border-radius: 0;
+  background: url(../image/back3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.frame-in{
+  width: 100%;
+  border-radius: 0;
+  background: url(../image/back4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* 첫번째 */
+.f-cnts{grid-area: span 3 / span 5;}
+
+.f-cnts img{
   position: absolute;
   top: 100px;
   left: 80%;
   transform: translateX(-80%);
 }
 
-  .f-cnts3 img{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* 두번째 */
-  .f-cnts2{
-    display: none;
-  }
-  .f-cnts2 h3{display: none;}
-  
-  /* 세번째 */
-  .f-cnts3{
-    display: none;
-  }
-  
-  .f-cnts3 img{display: none;}
-  .f-cnts4{display: none;}
-  .f-bar{border-radius: 0;}
+.f-cnts3 img{
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+/* 두번째 */
+.f-cnts2{display: none;}
+.f-cnts2 h3{display: none;}
 
-  #gradients>h2{
-    text-align: center;
-    font-size: 2.5rem;
-  }
+/* 세번째 */
+.f-cnts3{display: none;}
+.f-cnts3 img{display: none;}
+.f-cnts4{display: none;}
+.f-bar{border-radius: 0;}
 
-  #gradients>p{
-    padding: 10px;
-    font-size: 1.2rem;
-  }
+#gradients>h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
 
-  .f-bar{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255);
-    border-radius: 0;
-    border-bottom: 3px solid #ababab;
-  }
+#gradients>p{
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.f-bar{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255);
+  border-radius: 0;
+  border-bottom: 3px solid #ababab;
+}
 
 /* typography_____________________________ */
 #typography{
@@ -853,16 +842,16 @@ footer{
 /* glass morphism________________________ */
 
 #glassmorphism {
-    height: 100vh;
-    background: url(../image/sea-g5293c4036_1920.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0px -5px 20px rgb(157, 157, 157);
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    padding: 50px;
-    row-gap: 0px;
-    column-gap: 40px;
+  height: 100vh;
+  background: url(../image/sea-g5293c4036_1920.jpg) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px -5px 20px rgb(157, 157, 157);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  padding: 50px;
+  row-gap: 0px;
+  column-gap: 40px;
   }
 
 #glassmorphism>div:nth-child(1){
@@ -882,30 +871,29 @@ footer{
 
 #glassmorphism>div:nth-child(3){display: none;}
 
-  /* parallex______________________________________________ */
-  #parallex{
-    padding: 50px 0;
-    margin-top: 50px;
-  }
+/* parallex______________________________________________ */
+#parallex{
+  padding: 50px 0;
+  margin-top: 50px;
+}
 
-  .para-box{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .para-box div{
-    margin: 50px auto 0;
-    width: 100%;
-    border-radius: 0;
-  }
-  
-  .para-box div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .para-in h2{font-size: 2.5rem;}
-  .para-in p{font-size: 1.2rem;}
-  }
+.para-box{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.para-box div{
+  margin: 50px auto 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.para-box div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.para-in h2{font-size: 2.5rem;}
+.para-in p{font-size: 1.2rem;}
+}
 
